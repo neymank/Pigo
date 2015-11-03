@@ -5,8 +5,11 @@ __author__ = 'gilmour'
 
 class Pigo:
 
-    isMoving = False
-    servoPos = 90
+    ############
+    ############ BASIC STATUS AND METHODS
+    ############
+    status = {'ismoving' : False, 'servo' : 90, 'leftspeed' : 175, 'rightspeed' : 175}
+
 
     def __init__(self):
         print "I am alive."
@@ -22,6 +25,14 @@ class Pigo:
             time.slepp(.1)
             print "Can't do the vroom vroom"
 
+
+    ############
+    ############ COMPLEX METHODS
+    ############
+
+    ############
+    ############ MAIN APP STARTS HERE
+    ############
 
 
 tina = Pigo()
